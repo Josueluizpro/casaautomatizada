@@ -85,6 +85,184 @@
     .btn-voltar:hover {
       background-color: #005f84;
     }
+
+
+
+
+
+    /* === Estilo exclusivo da seção do projeto Maquete Automatizada Sustentável === */
+#projeto-maquete {
+  padding: 3rem 1rem;
+  background: #f9fafb;
+  color: #222;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Cabeçalho da seção */
+.project-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.project-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.project-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Layout principal (resumo + imagem) */
+.project-top-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+  margin-bottom: 2rem;
+}
+
+/* Cartões gerais */
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagem e legenda */
+.project-image img.responsive-img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.caption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* Habilidades (3 colunas) */
+.project-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.skill-card h4 {
+  color: #0d6efd;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.skill-card ol {
+  padding-left: 1.25rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Conclusão */
+.project-conclusion h3 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.project-conclusion p {
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.call-to-action {
+  font-weight: 600;
+  color: #0d6efd;
+}
+
+/* Rodapé com botões */
+.project-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn {
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn-primary {
+  background: #0d6efd;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #0b5ed7;
+}
+
+.btn-secondary {
+  background: #6c757d;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  background: #5c636a;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .project-title {
+    font-size: 1.6rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+/* (Opcional) Efeito de fade-in ao rolar a página */
+.project-card,
+.project-image,
+.skill-card,
+.project-conclusion {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.project-card.visible,
+.pro
+
+
+
+
+
+
+
+
+
+    
   </style>
 </head>
 <body>
@@ -351,6 +529,7 @@
 </body>
 
 </html>
+
 
 
 
